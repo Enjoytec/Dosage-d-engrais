@@ -44,6 +44,9 @@ public class Dosage  implements Initializable {
                 pst.executeUpdate();
                 pst.close();
                 con.close();
+
+
+                
             Alert alert = new Alert(Alert.AlertType.INFORMATION,"Votre dosage est enregistré avec succes!", ButtonType.OK);
             alert.showAndWait();
         }catch (Exception e){
