@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.SignIn">
+   <children>
+      <BorderPane layoutX="-3.0" prefHeight="427.0" prefWidth="726.0" style="-fx-background-color: #fff;" stylesheets="@../classes/style.css">
+         <left>
+            <Pane prefHeight="427.0" prefWidth="304.0" style="-fx-background-color: #3b04a1;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="202.0" fitWidth="207.0" layoutX="43.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Agriboost.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="86.0" layoutY="294.0" prefHeight="35.0" prefWidth="117.0" text="Bienvenue" textFill="#30d909">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </left>
+         <center>
+            <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="432.0" prefWidth="413.0">
+                     <children>
+                        <Pane layoutX="1.0" layoutY="-1.0" prefHeight="427.0" prefWidth="424.0" stylesheets="@classes/style.css">
+                           <children>
+                              <Button fx:id="btn_seconnecter" layoutX="199.0" layoutY="219.0" mnemonicParsing="false" onAction="#openHome" prefHeight="35.0" prefWidth="110.0" styleClass="button1" stylesheets="@../classes/style.css" text="Sign In" textFill="WHITE" />
+                              <Button fx:id="btn_sinscrire" layoutX="63.0" layoutY="324.0" mnemonicParsing="false" onAction="#openSignUp" prefHeight="47.0" prefWidth="245.0" styleClass="button2" stylesheets="@../classes/style.css" text="Vous n'avez pas un compte? Creer un!">
+                                 <font>
+                                    <Font name="Eras Medium ITC" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="lbl_forgoven" layoutX="76.0" layoutY="228.0" onMouseClicked="#password_oblie" prefHeight="22.0" prefWidth="109.0" text="Mot de pass oublié?" textFill="#eb1982" />
+                              <Label fx:id="lbl_forgoven1" layoutX="64.0" layoutY="52.0" prefHeight="22.0" prefWidth="109.0" text="Se connecter" textFill="#11b52c">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbl_erreur" layoutX="65.0" layoutY="191.0" prefHeight="22.0" prefWidth="245.0" textFill="#f80000" />
+                              <TextField fx:id="txt_username" layoutX="65.0" layoutY="79.0" prefHeight="46.0" prefWidth="241.0" promptText="UserName" />
+                              <PasswordField fx:id="txt_userpass" layoutX="65.0" layoutY="145.0" prefHeight="47.0" prefWidth="242.0" promptText="Password" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

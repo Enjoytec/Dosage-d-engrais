@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="539.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.Reste">
+   <children>
+      <VBox fx:id="hbox" layoutX="224.0" layoutY="147.0" prefHeight="325.0" prefWidth="390.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ComboBox fx:id="comboBox" onAction="#clickCombo" prefHeight="25.0" prefWidth="175.0" promptText="Selectionner le dosage">
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </VBox.margin></ComboBox>
+            <Label text="La dosage déjà appliquée" textFill="#ff9900">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold Italic" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txt_input" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="293.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="30.0" layoutY="10.0" text="La dosage restante" textFill="#ff9900">
+               <font>
+                  <Font name="Bodoni MT Condensed Bold Italic" size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txt_quantite" editable="false" layoutX="30.0" layoutY="45.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="450.0">
+               <VBox.margin>
+                  <Insets left="20.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="btn_calculer" mnemonicParsing="false" onAction="#calculer" prefHeight="40.0" prefWidth="148.0" style="-fx-background-color: #0879bb;" text="Calculer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="-4.0" prefHeight="73.0" prefWidth="398.0" style="-fx-background-color: #0879bb;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="153.0" layoutY="23.0" style="-fx-text-fill: white;" text="Calcule de quantité restante" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

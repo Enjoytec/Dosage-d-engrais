@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="483.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.DemarrageController">
+   <children>
+      <Pane prefHeight="483.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="201.0" layoutY="262.0" prefHeight="21.0" prefWidth="199.0" text="Bienvenue sur AGRIBOOST " textFill="#35a413">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="186.0" fitWidth="174.0" layoutX="213.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Agriboost.png" />
+               </image>
+            </ImageView>
+             <Button layoutX="231.0" layoutY="343.0" onAction="#onHelloButtonClick" prefHeight="58.0" prefWidth="138.0" style="-fx-background-color: green;" text="Démarrer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="close_windows" fitHeight="28.0" fitWidth="30.0" layoutX="570.0" layoutY="-1.0" onMouseClicked="#dispose" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

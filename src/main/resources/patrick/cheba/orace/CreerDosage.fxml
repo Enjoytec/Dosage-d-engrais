@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="703.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.CreerDosage">
+   <children>
+      <Pane layoutX="139.0" layoutY="100.0" prefHeight="400.0" prefWidth="718.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="1.0" layoutY="1.0" prefHeight="76.0" prefWidth="703.0" style="-fx-background-color: #0879bb;">
+               <children>
+                  <Label layoutX="320.0" layoutY="25.0" text="Dosages" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Button fx:id="btn_dosage" layoutX="50.0" layoutY="189.0" mnemonicParsing="false" onAction="#do_dosage" prefHeight="58.0" prefWidth="227.0" style="-fx-background-color: #0879bb;" text="Créer un Dosage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_voirDosage" layoutX="412.0" layoutY="189.0" mnemonicParsing="false" onAction="#voirDosage" prefHeight="58.0" prefWidth="227.0" style="-fx-background-color: #0879bb;" text="Voir les Dosages fait" textFill="#fffafa">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

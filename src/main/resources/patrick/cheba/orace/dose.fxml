@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.Dose">
+   <children>
+      <Pane layoutX="158.0" layoutY="25.0" prefHeight="58.0" prefWidth="734.0" style="-fx-background-color: #0879bb;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="332.0" layoutY="16.0" text="Dosages" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <BorderPane layoutX="174.0" layoutY="116.0" prefHeight="404.0" prefWidth="734.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="58.0">
+         <top>
+            <TabPane prefHeight="412.0" prefWidth="734.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Dosages fait">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="284.0" prefWidth="723.0">
+                           <children>
+                              <BorderPane prefHeight="346.0" prefWidth="734.0">
+                                 <top>
+                                    <HBox prefHeight="0.0" prefWidth="734.0" BorderPane.alignment="CENTER" />
+                                 </top>
+                                 <left>
+                                    <TableView fx:id="table" prefHeight="318.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+                                      <columns>
+                                          <TableColumn fx:id="nom" prefWidth="227.0" style="-fx-background-color: #0879bb;" text="Nom de la plante" />
+                                        <TableColumn fx:id="N" prefWidth="166.0" style="-fx-background-color: #0879bb;" text="Nomdres de N" />
+                                          <TableColumn fx:id="K" minWidth="0.0" prefWidth="163.0" style="-fx-background-color: #0879bb;" text="Nomdres de K" />
+                                          <TableColumn fx:id="P" prefWidth="177.0" style="-fx-background-color: #0879bb;" text="Nomdres de P" />
+                                      </columns>
+                                    </TableView>
+                                 </left>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </top>
+         <bottom>
+            <HBox prefHeight="42.0" prefWidth="734.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btn_afficher" mnemonicParsing="false" onAction="#view" prefHeight="36.0" prefWidth="128.0" style="-fx-background-color: #0879bb;" text="Afficher" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_newDose" mnemonicParsing="false" onAction="#newDose" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #0879bb;" text="Creer un dosage" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="imprim" mnemonicParsing="false" onAction="#imprimList" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #0879bb;" text="Imprimer la liste" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

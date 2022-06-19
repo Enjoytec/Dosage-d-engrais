@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="443.0" prefWidth="368.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.Dosage">
+   <children>
+      <TextField fx:id="input_name" layoutX="81.0" layoutY="95.0" prefHeight="48.0" prefWidth="203.0" promptText="Nom de la plante" />
+      <TextField fx:id="input_P" layoutX="83.0" layoutY="160.0" prefHeight="48.0" prefWidth="203.0" promptText="Quantite de P" />
+      <TextField fx:id="input_K" layoutX="83.0" layoutY="221.0" prefHeight="48.0" prefWidth="203.0" promptText="Quantite de K" />
+      <TextField fx:id="input_N" layoutX="83.0" layoutY="283.0" prefHeight="48.0" prefWidth="203.0" promptText="Quantite de N" />
+      <Button fx:id="creerDosage" layoutX="84.0" layoutY="361.0" mnemonicParsing="false" onAction="#addDosage" prefHeight="48.0" prefWidth="203.0" style="-fx-background-color: #0879bb;" text="Creer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Pane layoutX="-1.0" layoutY="-4.0" prefHeight="70.0" prefWidth="374.0" style="-fx-background-color: #0879bb;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="131.0" layoutY="25.0" text="Creer un dosage" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

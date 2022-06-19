@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="491.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="patrick.cheba.orace.Home">
+    <children>
+        <Pane layoutX="254.0" prefHeight="90.0" prefWidth="683.0" style="-fx-background-color: #0879bb;" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+        <VBox layoutX="-1.0" layoutY="-1.0" prefHeight="490.0" prefWidth="256.0" style="-fx-background-color: #3F2B63;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Pane prefHeight="136.0" prefWidth="256.0">
+                    <children>
+                        <ImageView fitHeight="68.0" fitWidth="135.0" layoutX="94.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/Agriboost.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="75.0" layoutY="95.0" prefHeight="27.0" prefWidth="117.0" text="AGRIBOOST" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+                <Button fx:id="acceuil" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#openAcceuil" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Acceuil-Domaine" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/acceuil.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="acceuil1" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" onAction="#dosage" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Créer un Dosage" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/dosage.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="acceuil11" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="216.0" mnemonicParsing="false" onAction="#exploitation" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Créer Exploitation" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/exploit.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="acceuil111" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="286.0" mnemonicParsing="false" onAction="#verifie" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Vérifier la quantité" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/verifie.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="acceuil1111" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="356.0" mnemonicParsing="false" onAction="#details" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Détails Exploitation" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/details.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+                <Button fx:id="acceuil11111" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="426.0" mnemonicParsing="false" onAction="#parametre" prefHeight="70.0" prefWidth="260.0" style="-fx-background-color: transparent;" text="Paramètre de App" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/param.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                </Button>
+            </children>
+        </VBox>
+        <VBox fx:id="panneau" layoutX="274.0" layoutY="134.0" prefHeight="353.0" prefWidth="660.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0" />
+    </children>
+</AnchorPane>
